@@ -32,6 +32,10 @@ form label, input {
     margin-right: 10px;
 }
 
+form span {
+    height: 20px;
+}
+
 .form_row {
     display: flex;
     justify-content: center;
