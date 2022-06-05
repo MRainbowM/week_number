@@ -4,7 +4,7 @@ var result = document.querySelector('#result');
 function calcWeekNumber() {
     var input_date = form.elements.date;
 
-    fetch(`http://127.0.0.1:8080/week/?date=${input_date.value}`)
+    fetch(`/week/?date=${input_date.value}`)
         .then((response) => {
             return response.json();
         })
