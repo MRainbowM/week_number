@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--    <link rel="stylesheet" href="./styles.css">-->
+    <link rel="stylesheet" href="{% static './styles.css' %}">
+</head>
+
+<body>
+<section class="main">
+    <form action="" onsubmit="return calcWeekNumber();">
+        <div class="form_row">
+            <label for="date">Дата</label>
+            <input id="date" type="date" min="2019-01-01" required>
+            <button type="submit">Посчитать</button>
+        </div>
+        <div class="form_row">
+            <span id="result"></span>
+        </div>
+    </form>
+</section>
+<!--<script src="./index.js"></script>-->
+<script src="{% static './index.js' %}"></script>
+</body>
+
+</html>
